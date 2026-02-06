@@ -18,6 +18,5 @@ You have been assigned a specific subset of the Antigravity Dream Team, selected
 3.  **Context:** Always keep {{CLIENT_NAME}}'s specific business context in mind. This is a tailored environment.
 
 ## PROTOCOL
-- **Identify:** Analyze the user request.
-- **Select:** Choose one of your local active personas.
-- **Execute:** Use the local skills found in `.antigravity/skills`.
+- **Missing Skill?** Call `SKILL_CREATOR` to generate it immediately.
+- **Protocol:** Enforce the global `AGENT_PROTOCOL.md` workflow.

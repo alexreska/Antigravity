@@ -25,10 +25,12 @@ def run_command(command, cwd=BASE_DIR):
 def setup_client(client_name, personas, skills):
     """
     1. Create client directory.
-    2. Copy Personas.
+    2. Copy Personas + SKILL_CREATOR (Mandatory).
     3. Copy Skills.
     4. Create Client Master.
-    5. Git Branch -> Commit -> Push.
+    5. Git Branch -> Commit.
+    6. CLEANUP: Remove global .antigravity folder.
+    7. Push.
     """
     client_slug = client_name.lower().replace(" ", "_").replace("-", "_")
     client_dir = os.path.join(BASE_DIR, "clients", client_slug)
@@ -37,7 +39,7 @@ def setup_client(client_name, personas, skills):
 
     print(f"🚀 Initializing Client Environment: {client_name} ({client_slug})")
 
-    # 1. Create Directories
+    # 1. Create Directories (Client Context)
     if os.path.exists(client_dir):
         print(f"⚠️ Directory {client_dir} already exists. Updating...")
     else:
@@ -45,6 +47,10 @@ def setup_client(client_name, personas, skills):
         os.makedirs(client_skills_dir, exist_ok=True)
 
     # 2. Copy Logic
+    # ALWAYS include SKILL_CREATOR
+    if "SKILL_CREATOR" not in personas:
+        personas.append("SKILL_CREATOR")
+
     # Copy Personas
     for p in personas:
         src = os.path.join(SOURCE_PERSONAS_DIR, f"{p}.md")
@@ -83,7 +89,7 @@ def setup_client(client_name, personas, skills):
     else:
         print("   ❌ Error: Client Master Template not found.")
 
-    # 4. Git Operations
+    # 4. Git Operations - Create Branch
     branch_name = f"client/{client_slug}"
     print(f"🌿 Git Operations: {branch_name}")
     
@@ -94,8 +100,17 @@ def setup_client(client_name, personas, skills):
     else:
         run_command(f"git checkout -b {branch_name}")
 
+    # 5. CLEANUP PHASE (The "Purge")
+    # Now that we are on the new branch, we delete the global .antigravity folder
+    # This leaves ONLY the client-specific copy we just created.
+    global_antigravity = os.path.join(BASE_DIR, ".antigravity")
+    if os.path.exists(global_antigravity):
+        print("   🧹 Cleaning up global context (Isolating Client Branch)...")
+        shutil.rmtree(global_antigravity)
+    
+    # 6. Commit and Push
     run_command("git add .")
-    run_command(f'git commit -m "Initialize client environment for {client_name}"')
+    run_command(f'git commit -m "Initialize client environment for {client_name} (Clean Branch)"')
     
     try:
         run_command(f"git push -u origin {branch_name}")
