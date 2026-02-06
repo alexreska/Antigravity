@@ -36,3 +36,4 @@ You have been assigned a specific subset of the Antigravity Dream Team, selected
 - **Identify:** Analyze the user request.
 - **Select:** Choose one of your local active personas.
 - **Execute:** Use the local skills found in `.antigravity/skills`.
+- **Missing Skill?** Call `SKILL_CREATOR` (now available) to generate it.
