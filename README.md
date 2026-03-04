@@ -1,413 +1,480 @@
-# 🌌 Antigravity Awesome Skills: 713+ Agentic Skills for Claude Code, Gemini CLI, Cursor, Copilot & More
+# 🌌 Antigravity — Your AI Dream Team Operating System
 
-> **The Ultimate Collection of 713+ Universal Agentic Skills for AI Coding Assistants — Claude Code, Gemini CLI, Codex CLI, Antigravity IDE, GitHub Copilot, Cursor, OpenCode, AdaL**
+> **80+ Specialized AI Agents • 709+ Agentic Skills • One-Command Client Onboarding**
+>
+> Turn any AI coding assistant into a full-service digital agency with specialized departments, an orchestrator, and a client builder that creates bespoke teams in seconds.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Anthropic-purple)](https://claude.ai)
-[![Gemini CLI](https://img.shields.io/badge/Gemini%20CLI-Google-blue)](https://github.com/google-gemini/gemini-cli)
-[![Codex CLI](https://img.shields.io/badge/Codex%20CLI-OpenAI-green)](https://github.com/openai/codex)
-[![Cursor](https://img.shields.io/badge/Cursor-AI%20IDE-orange)](https://cursor.sh)
-[![Copilot](https://img.shields.io/badge/GitHub%20Copilot-VSCode-lightblue)](https://github.com/features/copilot)
-[![OpenCode](https://img.shields.io/badge/OpenCode-CLI-gray)](https://github.com/opencode-ai/opencode)
-[![Antigravity](https://img.shields.io/badge/Antigravity-DeepMind-red)](https://github.com/sickn33/antigravity-awesome-skills)
-[![AdaL CLI](https://img.shields.io/badge/AdaL%20CLI-SylphAI-pink)](https://sylph.ai/)
-[![ASK Supported](https://img.shields.io/badge/ASK-Supported-blue)](https://github.com/yeasy/ask)
-[![Buy Me a Book](https://img.shields.io/badge/Buy%20me%20a-book-d13610?logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/sickn33)
+[![Agents](https://img.shields.io/badge/Agents-80%2B-blueviolet)](.antigravity/docs/persona_menu.md)
+[![Skills](https://img.shields.io/badge/Skills-709%2B-green)](.antigravity/skills/)
+[![Client Builder](https://img.shields.io/badge/Client%20Builder-Automated-orange)](client_builder.py)
 
-If this project helps you, you can [support it here](https://buymeacoffee.com/sickn33) or simply ⭐ the repo.
-
-**Antigravity Awesome Skills** is a curated, battle-tested library of **713 high-performance agentic skills** designed to work seamlessly across all major AI coding assistants:
-
-- 🟣 **Claude Code** (Anthropic CLI)
-- 🔵 **Gemini CLI** (Google DeepMind)
-- 🟢 **Codex CLI** (OpenAI)
-- 🔴 **Antigravity IDE** (Google DeepMind)
-- 🩵 **GitHub Copilot** (VSCode Extension)
-- 🟠 **Cursor** (AI-native IDE)
-- ⚪ **OpenCode** (Open-source CLI)
-- 🌸 **AdaL CLI** (Self-evolving Coding Agent)
-
-This repository provides essential skills to transform your AI assistant into a **full-stack digital agency**, including official capabilities from **Anthropic**, **OpenAI**, **Google**, **Supabase**, and **Vercel Labs**.
+---
 
 ## Table of Contents
 
-- [🚀 New Here? Start Here!](#new-here-start-here)
-- [🔌 Compatibility & Invocation](#compatibility--invocation)
-- [🛠️ Installation](#installation)
-- [🧯 Troubleshooting](#troubleshooting)
-- [🎁 Curated Collections (Bundles)](#curated-collections)
-- [📦 Features & Categories](#features--categories)
-- [📚 Browse 713+ Skills](#browse-713-skills)
-- [🤝 How to Contribute](#how-to-contribute)
-- [🤝 Community](#community)
-- [☕ Support the Project](#support-the-project)
-- [👥 Contributors & Credits](#credits--sources)
-- [👥 Repo Contributors](#repo-contributors)
+- [🚀 What Is This?](#what-is-this)
+- [🏗️ Architecture](#architecture)
+- [👑 The MASTER Orchestrator](#the-master-orchestrator)
+- [🏢 The Dream Team — 80+ Agents by Department](#the-dream-team--80-agents-by-department)
+- [🛠️ 709+ Agentic Skills](#709-agentic-skills)
+- [🤝 Client Builder — Bespoke Teams in One Command](#client-builder--bespoke-teams-in-one-command)
+- [⚡ Quick Start](#quick-start)
+- [📂 Project Structure](#project-structure)
+- [🔧 Key System Files](#key-system-files)
+- [🧩 How It All Works Together](#how-it-all-works-together)
+- [🔌 Compatibility](#compatibility)
 - [⚖️ License](#license)
-- [🌟 Star History](#star-history)
-- [🏷️ GitHub Topics](#github-topics)
 
 ---
 
-## New Here? Start Here!
+## What Is This?
 
-**Welcome to the V4.0.0 Enterprise Edition.** This isn't just a list of scripts; it's a complete operating system for your AI Agent.
+**Antigravity** is not just a collection of skills — it's a **complete multi-agent operating system** for AI coding assistants.
 
-### 1. 🐣 Context: What is this?
+Most skill repos give you a flat list of markdown files. Antigravity gives you:
 
-**Antigravity Awesome Skills** (Release 4.0.0) is a massive upgrade to your AI's capabilities.
+| Feature | What You Get |
+|:--------|:-------------|
+| **🧠 Orchestrator** | A `MASTER` agent that analyzes requests and delegates to the right specialist |
+| **👥 80+ Personas** | Specialized agents organized into departments (Engineering, Marketing, Security, Legal, HR…) |
+| **🛠️ 709+ Skills** | A massive library of executable knowledge modules each agent can use |
+| **🤖 Client Builder** | A `RECEPTIONIST` agent interviews you, then `client_builder.py` creates an isolated Git branch with only the personas and skills your project needs |
+| **🏭 Skill Creator** | Missing a skill? The `SKILL_CREATOR` agent generates new ones on demand, following the Antigravity standard |
+| **📋 Agent Protocol** | A formal hierarchy (MASTER → Executive → Specialists) with engagement rules, review workflows, and guardrails |
 
-AI Agents (like Claude Code, Cursor, or Gemini) are smart, but they lack **specific tools**. They don't know your company's "Deployment Protocol" or the specific syntax for "AWS CloudFormation".
-**Skills** are small markdown files that teach them how to do these specific tasks perfectly, every time.
-
-### 2. ⚡️ Quick Start (1 minute)
-
-Install once; then use Starter Packs in [docs/BUNDLES.md](docs/BUNDLES.md) to focus on your role.
-
-1. **Install**:
-
-   ```bash
-   # Default path: ~/.agent/skills
-   npx antigravity-awesome-skills
-   ```
-
-2. **Verify**:
-
-   ```bash
-   test -d ~/.agent/skills && echo "Skills installed in ~/.agent/skills"
-   ```
-
-3. **Run your first skill**:
-
-   > "Use **@brainstorming** to plan a SaaS MVP."
-
-4. **Pick a bundle**:
-   - **Web Dev?** start with `Web Wizard`.
-   - **Security?** start with `Security Engineer`.
-   - **General use?** start with `Essentials`.
-
-### 3. 🧠 How to use
-
-Once installed, just ask your agent naturally:
-
-> "Use the **@brainstorming** skill to help me plan a SaaS."
-> "Run **@lint-and-validate** on this file."
-
-👉 **[Read the Full Getting Started Guide](docs/GETTING_STARTED.md)**
+> **Think of it as hiring an entire digital agency — CEO, CTO, CMO, Security Team, Legal, HR — that lives inside your AI assistant.**
 
 ---
 
-## Compatibility & Invocation
+## Architecture
 
-These skills follow the universal **SKILL.md** format and work with any AI coding assistant that supports agentic skills.
-
-| Tool            | Type | Invocation Example                | Path              |
-| :-------------- | :--- | :-------------------------------- | :---------------- |
-| **Claude Code** | CLI  | `>> /skill-name help me...`       | `.claude/skills/` |
-| **Gemini CLI**  | CLI  | `(User Prompt) Use skill-name...` | `.gemini/skills/` |
-| **Codex CLI**   | CLI  | `(User Prompt) Use skill-name...` | `.codex/skills/`  |
-| **Antigravity** | IDE  | `(Agent Mode) Use skill...`       | `.agent/skills/`  |
-| **Cursor**      | IDE  | `@skill-name (in Chat)`           | `.cursor/skills/` |
-| **Copilot**     | Ext  | `(Paste content manually)`        | N/A               |
-| **OpenCode**    | CLI  | `opencode run @skill-name`        | `.agent/skills/`  |
-| **AdaL CLI**    | CLI  | `(Auto) Skills load on-demand`    | `.adal/skills/`   |
-
-> [!TIP]
-> **Universal Path**: We recommend cloning to `.agent/skills/`. Most modern tools (Antigravity, recent CLIs) look here by default.
-
-> [!WARNING]
-> **Windows Users**: this repository uses **symlinks** for official skills.
-> See [Troubleshooting](#troubleshooting) for the exact fix.
-
----
-
-## Installation
-
-To use these skills with **Claude Code**, **Gemini CLI**, **Codex CLI**, **Cursor**, **Antigravity**, **OpenCode**, or **AdaL**:
-
-### Option A: npx (recommended)
-
-```bash
-# Default: ~/.agent/skills (universal)
-npx antigravity-awesome-skills
-
-# Cursor
-npx antigravity-awesome-skills --cursor
-
-# Claude Code
-npx antigravity-awesome-skills --claude
-
-# Gemini CLI
-npx antigravity-awesome-skills --gemini
-
-# Codex CLI
-npx antigravity-awesome-skills --codex
-
-# OpenCode (Universal)
-npx antigravity-awesome-skills
-
-# Custom path
-npx antigravity-awesome-skills --path ./my-skills
+```
+┌──────────────────────────────────────────────────────────┐
+│                      USER REQUEST                         │
+└─────────────────────────┬────────────────────────────────┘
+                          │
+                          ▼
+              ┌───────────────────────┐
+              │    👑 THE MASTER      │
+              │   Chief Orchestrator  │
+              │  (Analyzes & Delegates)│
+              └───────────┬───────────┘
+                          │
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+   ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+   │  Executive  │ │ Engineering │ │  Growth &   │
+   │  & Strategy │ │ (FE/BE/Ops) │ │  Marketing  │
+   │             │ │             │ │             │
+   │ CHIEF_OF_   │ │ REACT_      │ │ CMO_BOT     │
+   │ STAFF       │ │ EXPERT      │ │ SEO_        │
+   │ PRODUCT_    │ │ FLUTTER_DEV │ │ TECHNICAL   │
+   │ VISIONARY   │ │ DBA_POSTGRES│ │ COPY_CHIEF  │
+   │ ...         │ │ ...         │ │ ...         │
+   └─────────────┘ └─────────────┘ └─────────────┘
+          │               │               │
+          └───────────────┼───────────────┘
+                          ▼
+              ┌───────────────────────┐
+              │   🛠️ 709+ SKILLS     │
+              │  (Executable Knowledge │
+              │   Modules)            │
+              └───────────────────────┘
 ```
 
-Run `npx antigravity-awesome-skills --help` for all options. If the directory already exists, the installer runs `git pull` to update.
+**The Hierarchy (from [`AGENT_PROTOCOL.md`](.antigravity/docs/AGENT_PROTOCOL.md)):**
 
-### Option B: git clone
+| Level | Role | Examples |
+|:------|:-----|:---------|
+| **Level 1** | 👑 **MASTER** — Orchestrates everything, never codes directly | Delegates to specialists |
+| **Level 2** | 🏛️ **Executive & Strategy** — Plans before execution | `CHIEF_OF_STAFF`, `PRODUCT_VISIONARY`, `AGILE_COACH` |
+| **Level 3** | 🛠️ **Specialist Execution** — The hands that build | `REACT_EXPERT`, `DBA_POSTGRES`, `RED_TEAMER`, `CMO_BOT`… |
+
+---
+
+## The MASTER Orchestrator
+
+The [`MASTER.md`](.antigravity/personas/MASTER.md) is the brain of the system. It:
+
+1. **Analyzes** your request and identifies the domain
+2. **Selects** the right specialist(s) from the [persona menu](.antigravity/docs/persona_menu.md)
+3. **Delegates** the task — it never codes directly
+4. **Reviews** the output before presenting it to you
+5. **Calls `SKILL_CREATOR`** if a required skill is missing
+
+**Example routing:**
+
+| You say | Domain | Agent(s) called |
+|:--------|:-------|:----------------|
+| *"Write a blog post for SEO"* | Marketing | `SEO_CONTENT` + `COPY_CHIEF` |
+| *"Fix this React performance issue"* | Frontend | `REACT_EXPERT` + `PERFORMANCE_TESTER` |
+| *"Audit our API security"* | Security | `APPSEC_SPECIALIST` + `RED_TEAMER` |
+| *"Design our database schema"* | Backend | `DBA_POSTGRES` + `BACKEND_PRINCIPAL` |
+| *"Create a pitch deck"* | Executive | `STARTUP_STRATEGIST` |
+| *"Run a phishing simulation"* | Security | `SOCIAL_ENGINEER` |
+
+---
+
+## The Dream Team — 80+ Agents by Department
+
+Every agent is a markdown persona file in [`.antigravity/personas/`](.antigravity/personas/). Each defines a **Role**, **Goal**, **Toolkit** (linked skills), and **Instructions**.
+
+### 🏛️ Executive & Strategy
+| Agent | Mission |
+|:------|:--------|
+| `CHIEF_OF_STAFF` | Orchestrate cross-department execution & strategic alignment |
+| `PRODUCT_VISIONARY` | Define product strategy, PRDs, and feature prioritization |
+| `STARTUP_STRATEGIST` | Pitch decks, business models, fundraising |
+| `AGILE_COACH` | Sprints, standups, Jira/Linear workflows |
+| `COMMUNITY_HEAD` | Community management, Discord/Slack, events |
+
+### 🚀 Growth, Marketing & Sales
+| Agent | Mission |
+|:------|:--------|
+| `CMO_BOT` | Holistic marketing strategy & go-to-market |
+| `GROWTH_HACKER` | Rapid experiments, A/B tests, viral loops |
+| `SEO_TECHNICAL` | Site architecture, Core Web Vitals, schema markup |
+| `SEO_CONTENT` | Keyword research, topic clusters, content strategy |
+| `COPY_CHIEF` | High-converting sales copy, ads, VSL scripts |
+| `EMAIL_STRATEGIST` | Automation workflows, newsletters, retention |
+| `SOCIAL_X_PRO` | X/Twitter growth, threads, viral content |
+| `SOCIAL_LINKEDIN` | B2B thought leadership on LinkedIn |
+| `VIDEO_DIRECTOR` | Creative direction, storyboarding |
+| `VIDEO_EDITOR` | Programmatic video (Remotion, FFmpeg) |
+| `SALES_ENGINEER` | Technical demos, CRM integration |
+| `COLD_OUTREACH` | Lead generation, cold email at scale |
+
+### 🎨 Design & Experience
+| Agent | Mission |
+|:------|:--------|
+| `UX_RESEARCHER` | User interviews, usability testing, empathy mapping |
+| `UI_ARCHITECT` | Design systems, component libraries |
+| `BRAND_GUARDIAN` | Brand consistency across all touchpoints |
+| `MOTION_DESIGNER` | Micro-interactions, web animations |
+| `ACCESSIBILITY_AUDITOR` | WCAG compliance |
+
+### 🧠 Data & AI
+| Agent | Mission |
+|:------|:--------|
+| `DATA_SCIENTIST` | Statistical modeling & insights |
+| `AI_ARCHITECT` | Agent systems & cognitive architectures |
+| `PROMPT_ENGINEER` | LLM optimization & system prompts |
+| `RAG_SPECIALIST` | Retrieval-Augmented Generation pipelines |
+| `MLOPS_ENGINEER` | Model deployment & monitoring |
+| `ANALYTICS_ENGINEER` | dbt, data warehouses |
+| `BI_ANALYST` | Dashboards & business reporting |
+| `DATA_SCRAPER` | Web scraping & data extraction |
+
+### 🛡️ Security (Red, Blue, Purple)
+| Agent | Mission |
+|:------|:--------|
+| `CISO_BOT` | Security governance & risk management |
+| `RED_TEAMER` | Offensive — simulate adversary attacks |
+| `BLUE_DEFENDER` | Defensive — detect & mitigate threats |
+| `APPSEC_SPECIALIST` | Secure SDLC & code review |
+| `CLOUD_SEC_ARCHITECT` | Cloud hardening & IAM |
+| `SMART_CONTRACT_AUDITOR` | Web3 smart contract audits |
+| `SOCIAL_ENGINEER` | Phishing simulations |
+| `PRIVACY_OFFICER` | GDPR/CCPA compliance |
+
+### ⚡ Engineering: Frontend & Mobile
+| Agent | Mission |
+|:------|:--------|
+| `REACT_EXPERT` | High-performance React apps |
+| `ANGULAR_MASTER` | Enterprise Angular |
+| `NEXTJS_GURU` | SSR & full-stack React |
+| `CSS_ARTIST` | Pixel-perfect responsive layouts |
+| `IOS_ENGINEER` | Native iOS (Swift/SwiftUI) |
+| `ANDROID_ENGINEER` | Native Android (Kotlin) |
+| `FLUTTER_DEV` | Cross-platform mobile |
+| `GAME_DEV` | Game mechanics & engines |
+
+### ⚙️ Engineering: Backend & Infrastructure
+| Agent | Mission |
+|:------|:--------|
+| `BACKEND_PRINCIPAL` | Scalable backend architecture |
+| `NODE_SPECIALIST` | Node/TypeScript backends |
+| `PYTHON_BACKEND` | Django/FastAPI backends |
+| `GOLANG_ENGINEER` | High-concurrency services |
+| `RUST_SYSTEMS` | Memory-safe systems programming |
+| `API_ARCHITECT` | API design (REST/GraphQL) |
+| `DBA_POSTGRES` | Database optimization & migrations |
+| `SEARCH_ENGINEER` | Search engines (Algolia, Elastic) |
+
+### ☁️ Cloud & DevOps
+| Agent | Mission |
+|:------|:--------|
+| `CLOUD_ARCHITECT` | Cloud infrastructure (AWS/GCP) |
+| `KUBERNETES_PILOT` | Container orchestration |
+| `DEVOPS_AUTOMATOR` | CI/CD pipelines & IaC |
+| `SRE_WATCHER` | Site reliability & observability |
+| `SERVERLESS_DEV` | Event-driven serverless architectures |
+
+### 🔧 Specialized Tech
+| Agent | Mission |
+|:------|:--------|
+| `BLOCKCHAIN_DEV` | DApps & smart contracts |
+| `IOT_MAKER` | Hardware-to-digital (Arduino, MQTT, RPi) |
+| `ELECTRON_DEV` | Cross-platform desktop apps |
+| `BROWSER_EXTENSION_DEV` | Chrome/Firefox/Edge extensions |
+| `SCIENTIFIC_COMPUTING` | Scientific calculations & simulations |
+
+### 🧪 Quality Assurance
+| Agent | Mission |
+|:------|:--------|
+| `QA_DIRECTOR` | Quality strategy & release criteria |
+| `PERFORMANCE_TESTER` | Stress testing & bottleneck analysis |
+| `TDD_MENTOR` | Test-Driven Development coaching |
+
+### 🏢 Operations & Admin
+| Agent | Mission |
+|:------|:--------|
+| `HR_DIRECTOR` | HR, culture, employee relations |
+| `RECRUITER_BOT` | Sourcing candidates & hiring pipeline |
+| `LEGAL_COUNSEL` | Contracts, TOS, IP protection |
+| `FINANCE_CONTROLLER` | Budgeting, bookkeeping, forecasting |
+| `AUTOMATION_ARCHITECT` | Business process automation (no-code) |
+| `DOCS_LEAD` | Technical documentation & wikis |
+| `EDUCATOR` | Training programs & courses |
+
+### 🌐 Research & Intelligence
+| Agent | Mission |
+|:------|:--------|
+| `DEEP_RESEARCHER` | Exhaustive topic research |
+| `TREND_HUNT` | Industry trends & competitor monitoring |
+| `ACADEMIC_SYNTHESIZER` | Academic paper summarization |
+| `PATENT_ANALYST` | Patent landscape analysis |
+
+> 📋 **Full roster with toolkits:** [`persona_menu.md`](.antigravity/docs/persona_menu.md)
+
+---
+
+## 709+ Agentic Skills
+
+Skills are the **executable knowledge modules** that power each agent. Every skill is a folder inside [`.antigravity/skills/`](.antigravity/skills/) containing a `SKILL.md` with YAML frontmatter and step-by-step instructions.
+
+**Categories include:**
+
+| Category | Examples |
+|:---------|:---------|
+| **Architecture** | `architecture`, `c4-context`, `senior-architect`, `microservices-patterns` |
+| **Business & Marketing** | `copywriting`, `pricing-strategy`, `seo-audit`, `email-sequence`, `paid-ads` |
+| **Data & AI** | `rag-engineer`, `prompt-engineer`, `langgraph`, `langchain-architecture` |
+| **Development** | `typescript-expert`, `python-patterns`, `react-best-practices`, `flutter-expert` |
+| **Infrastructure** | `docker-expert`, `aws-serverless`, `vercel-deployment`, `terraform-specialist` |
+| **Security** | `api-security-best-practices`, `sql-injection-testing`, `pentest-commands` |
+| **Testing** | `test-driven-development`, `playwright-skill`, `testing-patterns` |
+| **Workflow & Automation** | `workflow-automation`, `github-actions-templates`, `n8n-mcp-tools-expert` |
+| **Integrations** | `hubspot-automation`, `stripe-integration`, `slack-automation`, `salesforce-automation` |
+| **Documents** | `docx`, `xlsx`, `pptx`, `pdf` |
+
+> 📦 **Browse all 709+ skills:** [`skills/`](.antigravity/skills/)
+
+---
+
+## Client Builder — Bespoke Teams in One Command
+
+This is the **killer feature**. Instead of dumping 709+ skills on every project, you can create a **tailored, isolated environment** with only what each client needs.
+
+### How It Works
+
+```
+┌────────────────────┐     ┌──────────────────────┐     ┌──────────────────────┐
+│  1. RECEPTIONIST   │────▶│  2. CLIENT_BUILDER   │────▶│  3. ISOLATED BRANCH  │
+│  (AI Interview)    │     │  (Python Script)     │     │  (Git Branch)        │
+│                    │     │                      │     │                      │
+│ • Asks about your  │     │ • Creates client dir │     │ client/acme_corp     │
+│   business         │     │ • Copies only needed │     │ ├── .antigravity/    │
+│ • Identifies tech  │     │   personas & skills  │     │ │   ├── personas/    │
+│   stack            │     │ • Generates bespoke  │     │ │   │   ├── MASTER.md│
+│ • Maps needs to    │     │   MASTER.md          │     │ │   │   ├── REACT_...│
+│   agents           │     │ • Creates git branch │     │ │   │   └── SEO_...  │
+│ • Recommends squad │     │ • Pushes to remote   │     │ │   └── skills/     │
+└────────────────────┘     └──────────────────────┘     │ │       ├── react-...│
+                                                        │ │       └── seo-...  │
+                                                        │ └── (clean branch)   │
+                                                        └──────────────────────┘
+```
+
+### Step 1: Talk to the Receptionist
+
+The [`RECEPTIONIST`](.antigravity/personas/RECEPTIONIST.md) agent conducts a structured interview:
+
+1. **Greeting** — Client name & industry
+2. **Assessment** — Tech stack, team structure, marketing needs, pain points
+3. **Formulation** — Maps answers to the right personas and skills
+4. **Handoff** — Generates the exact build command
+
+### Step 2: Run the Builder
 
 ```bash
-# Universal (works with most tools)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+python3 client_builder.py \
+  --name "Acme Corp" \
+  --personas PRODUCT_VISIONARY REACT_EXPERT SEO_TECHNICAL CISO_BOT BLUE_DEFENDER \
+  --skills vercel-react-best-practices shadcn-ui-best-practices seo-audit
+```
 
-# Claude Code specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .claude/skills
+### Step 3: A Clean Branch Is Created
 
-# Gemini CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .gemini/skills
+The [`client_builder.py`](client_builder.py) script:
 
-# Codex CLI specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .codex/skills
+1. ✅ Creates a `clients/acme_corp/` directory
+2. ✅ Copies only the selected personas and skills
+3. ✅ Always includes `SKILL_CREATOR` (so the client can generate missing skills)
+4. ✅ Generates a bespoke `MASTER.md` from the [`CLIENT_MASTER_TEMPLATE.md`](.antigravity/CLIENT_MASTER_TEMPLATE.md)
+5. ✅ Creates a `client/acme_corp` Git branch
+6. ✅ Removes the global `.antigravity/` from the branch (isolation!)
+7. ✅ Commits, pushes, and returns to `main`
 
-# Cursor specific
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .cursor/skills
+**Result:** Each client gets their own branch with a **focused, relevant team** — no noise from the 700+ skills they don't need.
 
-# OpenCode specific (Universal path)
-git clone https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
+---
+
+## Quick Start
+
+### Option 1: Clone & Use the Full System
+
+```bash
+git clone https://github.com/alexreska/Antigravity.git
+cd Antigravity
+```
+
+Start using the MASTER orchestrator with your AI assistant:
+
+> *"Read `.antigravity/personas/MASTER.md` and act as the MASTER orchestrator. I need help building a React SaaS with SEO."*
+
+### Option 2: Create a Client-Specific Branch
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/alexreska/Antigravity.git
+cd Antigravity
+
+# 2. Run the client builder
+python3 client_builder.py \
+  --name "My Project" \
+  --personas REACT_EXPERT NEXTJS_GURU SEO_TECHNICAL UI_ARCHITECT \
+  --skills react-best-practices nextjs-best-practices seo-audit tailwind-design-system
+
+# 3. Switch to the client branch
+git checkout client/my_project
+```
+
+### Option 3: Let the Receptionist Guide You
+
+> *"Read `.antigravity/personas/RECEPTIONIST.md` and act as the Receptionist. I want to onboard a new client."*
+
+The AI will interview you and generate the exact `client_builder.py` command for your needs.
+
+---
+
+## Project Structure
+
+```
+Antigravity/
+├── .antigravity/                    # 🧠 The Brain (Multi-Agent System)
+│   ├── personas/                    #    80+ Specialized Agent Personas
+│   │   ├── MASTER.md                #    👑 The Orchestrator
+│   │   ├── RECEPTIONIST.md          #    🤝 Client Onboarding Agent
+│   │   ├── SKILL_CREATOR.md         #    🏭 On-Demand Skill Generator
+│   │   ├── CHIEF_OF_STAFF.md        #    Executive & Strategy
+│   │   ├── REACT_EXPERT.md          #    Frontend Specialist
+│   │   ├── RED_TEAMER.md            #    Security Specialist
+│   │   ├── CMO_BOT.md               #    Marketing Specialist
+│   │   └── ... (80+ more)           #    Full roster
+│   │
+│   ├── skills/                      #    🛠️ 709+ Executable Skill Modules
+│   │   ├── react-best-practices/    #    Each skill is a folder
+│   │   │   └── SKILL.md             #    with a SKILL.md definition
+│   │   ├── seo-audit/
+│   │   ├── docker-expert/
+│   │   └── ... (709+ more)
+│   │
+│   ├── docs/                        #    📚 System Documentation
+│   │   ├── AGENT_PROTOCOL.md        #    Hierarchy & engagement rules
+│   │   ├── persona_menu.md          #    Full agent roster with toolkits
+│   │   └── PARANOIC_TEST.md         #    Audit checklist template
+│   │
+│   ├── CLIENT_MASTER_TEMPLATE.md    #    Template for client-specific MASTER
+│   └── rules.md                     #    Global guardrails
+│
+├── client_builder.py                # 🤖 Creates isolated client branches
+└── README.md                        # 📖 You are here
 ```
 
 ---
 
-## Troubleshooting
+## Key System Files
 
-### `npx antigravity-awesome-skills` returns 404
+| File | Purpose |
+|:-----|:--------|
+| [`MASTER.md`](.antigravity/personas/MASTER.md) | The orchestrator — analyzes requests and delegates to specialists |
+| [`RECEPTIONIST.md`](.antigravity/personas/RECEPTIONIST.md) | Interviews users to identify the right personas and skills for their project |
+| [`SKILL_CREATOR.md`](.antigravity/personas/SKILL_CREATOR.md) | Generates new skills on demand when a capability is missing |
+| [`AGENT_PROTOCOL.md`](.antigravity/docs/AGENT_PROTOCOL.md) | The formal hierarchy and engagement rules for all agents |
+| [`persona_menu.md`](.antigravity/docs/persona_menu.md) | Complete roster of 80+ agents with their missions and toolkits |
+| [`CLIENT_MASTER_TEMPLATE.md`](.antigravity/CLIENT_MASTER_TEMPLATE.md) | Template used to generate client-specific MASTER files |
+| [`client_builder.py`](client_builder.py) | Python script that creates isolated client branches |
+| [`rules.md`](.antigravity/rules.md) | Global project guardrails and safety checks |
+| [`PARANOIC_TEST.md`](.antigravity/docs/PARANOIC_TEST.md) | 30-check paranoia-level audit checklist |
 
-Use the GitHub package fallback:
+---
 
-```bash
-npx github:sickn33/antigravity-awesome-skills
+## How It All Works Together
+
+```
+  YOU: "I need a React SaaS with SEO and security"
+   │
+   ▼
+  RECEPTIONIST interviews you
+   │
+   ▼
+  Identifies: REACT_EXPERT, NEXTJS_GURU, SEO_TECHNICAL,
+              CISO_BOT, UI_ARCHITECT
+   │
+   ▼
+  client_builder.py creates branch: client/your_project
+   │
+   ▼
+  On the branch, MASTER orchestrates:
+   │
+   ├─▶ PRODUCT_VISIONARY writes the PRD
+   ├─▶ UI_ARCHITECT designs the component library
+   ├─▶ REACT_EXPERT builds the frontend
+   ├─▶ SEO_TECHNICAL optimizes for search
+   ├─▶ CISO_BOT audits security
+   └─▶ QA_DIRECTOR validates the release
+   │
+   ▼
+  If a skill is missing, SKILL_CREATOR generates it
+   │
+   ▼
+  MASTER reviews everything before presenting to you
 ```
 
-### Windows clone issues (symlinks)
+### Key Principles
 
-This repository uses symlinks for official skills. Enable Developer Mode or run Git as Administrator, then clone with:
-
-```bash
-git clone -c core.symlinks=true https://github.com/sickn33/antigravity-awesome-skills.git .agent/skills
-```
-
-### Skills installed but not detected by your tool
-
-Install to the tool-specific path (for example `.claude/skills`, `.gemini/skills`, `.codex/skills`, `.cursor/skills`) or use the installer flags (`--claude`, `--gemini`, `--codex`, `--cursor`, `--path`).
-
-### Update an existing installation
-
-```bash
-git -C ~/.agent/skills pull
-```
-
-### Reinstall from scratch
-
-```bash
-rm -rf ~/.agent/skills
-npx antigravity-awesome-skills
-```
+1. **Specialization over Generalization** — Every agent has a focused mission and specific toolkit
+2. **Delegation, Not Execution** — The MASTER never codes; it routes to specialists
+3. **Isolation** — Client branches contain only relevant agents, reducing noise and context
+4. **Self-Healing** — Missing skills are generated on-the-fly by `SKILL_CREATOR`
+5. **Protocol-Driven** — Every interaction follows the [`AGENT_PROTOCOL.md`](.antigravity/docs/AGENT_PROTOCOL.md) workflow
 
 ---
 
-## Curated Collections
+## Compatibility
 
-**Bundles** are curated groups of skills for a specific role or goal (for example: `Web Wizard`, `Security Engineer`, `OSS Maintainer`).
+This system works with any AI coding assistant that can read markdown files as context:
 
-They help you avoid picking from 700+ skills one by one.
-
-What bundles are:
-- Recommended starting sets for common workflows.
-- A shortcut for onboarding and faster execution.
-
-What bundles are not:
-- Not a separate install.
-- Not a locked preset.
-
-How to use bundles:
-1. Install the repository once.
-2. Pick one bundle in [docs/BUNDLES.md](docs/BUNDLES.md).
-3. Start with 3-5 skills from that bundle in your prompt.
-4. Add more only when needed.
-
-Examples:
-- Building a SaaS MVP: `Essentials` + `Full-Stack Developer` + `QA & Testing`.
-- Hardening production: `Security Developer` + `DevOps & Cloud` + `Observability & Monitoring`.
-- Shipping OSS changes: `Essentials` + `OSS Maintainer`.
-
-## Features & Categories
-
-The repository is organized into specialized domains to transform your AI into an expert across the entire software development lifecycle:
-
-| Category       | Focus                                              | Example skills                                                                  |
-| :------------- | :------------------------------------------------- | :------------------------------------------------------------------------------ |
-| Architecture   | System design, ADRs, C4, and scalable patterns     | `architecture`, `c4-context`, `senior-architect`                                |
-| Business       | Growth, pricing, CRO, SEO, and go-to-market        | `copywriting`, `pricing-strategy`, `seo-audit`                                  |
-| Data & AI      | LLM apps, RAG, agents, observability, analytics    | `rag-engineer`, `prompt-engineer`, `langgraph`                                  |
-| Development    | Language mastery, framework patterns, code quality | `typescript-expert`, `python-patterns`, `react-patterns`                        |
-| General        | Planning, docs, product ops, writing, guidelines   | `brainstorming`, `doc-coauthoring`, `writing-plans`                             |
-| Infrastructure | DevOps, cloud, serverless, deployment, CI/CD       | `docker-expert`, `aws-serverless`, `vercel-deployment`                          |
-| Security       | AppSec, pentesting, vuln analysis, compliance      | `api-security-best-practices`, `sql-injection-testing`, `vulnerability-scanner` |
-| Testing        | TDD, test design, fixes, QA workflows              | `test-driven-development`, `testing-patterns`, `test-fixing`                    |
-| Workflow       | Automation, orchestration, jobs, agents            | `workflow-automation`, `inngest`, `trigger-dev`                                 |
-
-Counts change as new skills are added. For the current full registry, see [CATALOG.md](CATALOG.md).
-
-## Browse 713+ Skills
-
-We have moved the full skill registry to a dedicated catalog to keep this README clean.
-
-👉 **[View the Complete Skill Catalog (CATALOG.md)](CATALOG.md)**
-
----
-
-## How to Contribute
-
-We welcome contributions from the community! To add a new skill:
-
-1. **Fork** the repository.
-2. **Create a new directory** inside `skills/` for your skill.
-3. **Add a `SKILL.md`** with the required frontmatter (name and description).
-4. **Run validation**: `python3 scripts/validate_skills.py`.
-5. **Submit a Pull Request**.
-
-Please ensure your skill follows the Antigravity/Claude Code best practices.
-
----
-
-## Community
-
-- [Community Guidelines](docs/COMMUNITY_GUIDELINES.md)
-- [Security Policy](docs/SECURITY_GUARDRAILS.md)
-
----
-
-## Support the Project
-
-Support is optional. This project stays free and open-source for everyone.
-
-If this repository saves you time or helps you ship faster, you can support ongoing maintenance:
-- [☕ Buy me a book on Buy Me a Coffee](https://buymeacoffee.com/sickn33)
-
-Where support goes:
-- Skill curation, testing, and quality validation.
-- Documentation updates, examples, and onboarding improvements.
-- Faster triage and review of community issues and PRs.
-
-Prefer non-financial support:
-- Star the repository.
-- Open clear, reproducible issues.
-- Submit PRs (skills, docs, fixes).
-- Share the project with other builders.
-
----
-
-## Credits & Sources
-
-We stand on the shoulders of giants.
-
-👉 **[View the Full Attribution Ledger](docs/SOURCES.md)**
-
-Key contributors and sources include:
-
-- **HackTricks**
-- **OWASP**
-- **Anthropic / OpenAI / Google**
-- **The Open Source Community**
-
-This collection would not be possible without the incredible work of the Claude Code community and official sources:
-
-### Official Sources
-
-- **[anthropics/skills](https://github.com/anthropics/skills)**: Official Anthropic skills repository - Document manipulation (DOCX, PDF, PPTX, XLSX), Brand Guidelines, Internal Communications.
-- **[anthropics/claude-cookbooks](https://github.com/anthropics/claude-cookbooks)**: Official notebooks and recipes for building with Claude.
-- **[remotion-dev/skills](https://github.com/remotion-dev/skills)**: Official Remotion skills - Video creation in React with 28 modular rules.
-- **[vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills)**: Vercel Labs official skills - React Best Practices, Web Design Guidelines.
-- **[openai/skills](https://github.com/openai/skills)**: OpenAI Codex skills catalog - Agent skills, Skill Creator, Concise Planning.
-- **[supabase/agent-skills](https://github.com/supabase/agent-skills)**: Supabase official skills - Postgres Best Practices.
-
-### Community Contributors
-
-- **[rmyndharis/antigravity-skills](https://github.com/rmyndharis/antigravity-skills)**: For the massive contribution of 300+ Enterprise skills and the catalog generation logic.
-
-- **[obra/superpowers](https://github.com/obra/superpowers)**: The original "Superpowers" by Jesse Vincent.
-- **[guanyang/antigravity-skills](https://github.com/guanyang/antigravity-skills)**: Core Antigravity extensions.
-- **[diet103/claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase)**: Infrastructure and Backend/Frontend Guidelines.
-- **[ChrisWiles/claude-code-showcase](https://github.com/ChrisWiles/claude-code-showcase)**: React UI patterns and Design Systems.
-- **[travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills)**: Loki Mode and Playwright integration.
-- **[zebbern/claude-code-guide](https://github.com/zebbern/claude-code-guide)**: Comprehensive Security suite & Guide (Source for ~60 new skills).
-- **[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)**: Senior Engineering and PM toolkit.
-- **[karanb192/awesome-claude-skills](https://github.com/karanb192/awesome-claude-skills)**: A massive list of verified skills for Claude Code.
-- **[VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)**: Curated collection of 61 high-quality skills including official team skills from Sentry, Trail of Bits, Expo, Hugging Face, and comprehensive context engineering suite (v4.3.0 integration).
-- **[zircote/.claude](https://github.com/zircote/.claude)**: Shopify development skill reference.
-- **[vibeforge1111/vibeship-spawner-skills](https://github.com/vibeforge1111/vibeship-spawner-skills)**: AI Agents, Integrations, Maker Tools (57 skills, Apache 2.0).
-- **[coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)**: Marketing skills for CRO, copywriting, SEO, paid ads, and growth (23 skills, MIT).
-- **[vudovn/antigravity-kit](https://github.com/vudovn/antigravity-kit)**: AI Agent templates with Skills, Agents, and Workflows (33 skills, MIT).
-- **[affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)**: Complete Claude Code configuration collection from Anthropic hackathon winner - skills only (8 skills, MIT).
-- **[whatiskadudoing/fp-ts-skills](https://github.com/whatiskadudoing/fp-ts-skills)**: Practical fp-ts skills for TypeScript – fp-ts-pragmatic, fp-ts-react, fp-ts-errors (v4.4.0).
-- **[webzler/agentMemory](https://github.com/webzler/agentMemory)**: Source for the agent-memory-mcp skill.
-- **[sstklen/claude-api-cost-optimization](https://github.com/sstklen/claude-api-cost-optimization)**: Save 50-90% on Claude API costs with smart optimization strategies (MIT).
-
-### Inspirations
-
-- **[f/awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)**: Inspiration for the Prompt Library.
-- **[leonardomso/33-js-concepts](https://github.com/leonardomso/33-js-concepts)**: Inspiration for JavaScript Mastery.
-
----
-
-## Repo Contributors
-
-<a href="https://github.com/sickn33/antigravity-awesome-skills/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sickn33/antigravity-awesome-skills" />
-</a>
-
-Made with [contrib.rocks](https://contrib.rocks).
-
-We officially thank the following contributors for their help in making this repository awesome!
-
-- [@sck000](https://github.com/sck000)
-- [@munir-abbasi](https://github.com/munir-abbasi)
-- [@sickn33](https://github.com/sickn33)
-- [@Mohammad-Faiz-Cloud-Engineer](https://github.com/Mohammad-Faiz-Cloud-Engineer)
-- [@Dokhacgiakhoa](https://github.com/Dokhacgiakhoa)
-- [@IanJ332](https://github.com/IanJ332)
-- [@chauey](https://github.com/chauey)
-- [@PabloSMD](https://github.com/PabloSMD)
-- [@GuppyTheCat](https://github.com/GuppyTheCat)
-- [@Tiger-Foxx](https://github.com/Tiger-Foxx)
-- [@arathiesh](https://github.com/arathiesh)
-- [@liyin2015](https://github.com/liyin2015)
-- [@1bcMax](https://github.com/1bcMax)
-- [@ALEKGG1](https://github.com/ALEKGG1)
-- [@ar27111994](https://github.com/ar27111994)
-- [@BenedictKing](https://github.com/BenedictKing)
-- [@whatiskadudoing](https://github.com/whatiskadudoing)
-- [@LocNguyenSGU](https://github.com/LocNguyenSGU)
-- [@yubing744](https://github.com/yubing744)
-- [@SuperJMN](https://github.com/SuperJMN)
-- [@truongnmt](https://github.com/truongnmt)
-- [@viktor-ferenczi](https://github.com/viktor-ferenczi)
-- [@c1c3ru](https://github.com/c1c3ru)
-- [@ckdwns9121](https://github.com/ckdwns9121)
-- [@fbientrigo](https://github.com/fbientrigo)
-- [@junited31](https://github.com/junited31)
-- [@KrisnaSantosa15](https://github.com/KrisnaSantosa15)
-- [@sstklen](https://github.com/sstklen)
-- [@taksrules](https://github.com/taksrules)
-- [@zebbern](https://github.com/zebbern)
-- [@vuth-dogo](https://github.com/vuth-dogo)
-- [@mvanhorn](https://github.com/mvanhorn)
-- [@rookie-ricardo](https://github.com/rookie-ricardo)
-- [@evandro-miguel](https://github.com/evandro-miguel)
-- [@raeef1001](https://github.com/raeef1001)
-- [@devchangjun](https://github.com/devchangjun)
-- [@jackjin1997](https://github.com/jackjin1997)
-- [@ericgandrade](https://github.com/ericgandrade)
-- [@sohamganatra](https://github.com/sohamganatra)
-- [@Nguyen-Van-Chan](https://github.com/Nguyen-Van-Chan)
+| Tool | How to Use |
+|:-----|:-----------|
+| **Antigravity IDE** | Load persona files as agent context |
+| **Claude Code** | Reference `.antigravity/personas/MASTER.md` in conversation |
+| **Gemini CLI** | Point to persona files with `Use MASTER.md...` |
+| **Cursor** | Add persona files to your context with `@` |
+| **GitHub Copilot** | Paste persona content into chat |
+| **Codex CLI** | Reference persona files in prompts |
 
 ---
 
@@ -417,21 +484,8 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
-## Star History
+## Support
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sickn33/antigravity-awesome-skills&type=date&legend=top-left)](https://www.star-history.com/#sickn33/antigravity-awesome-skills&type=date&legend=top-left)
+If this project helps you, ⭐ **star the repo** — it helps others discover it.
 
-If Antigravity Awesome Skills has been useful, consider ⭐ starring the repo or [buying me a book](https://buymeacoffee.com/sickn33).
-
----
-
-## GitHub Topics
-
-For repository maintainers, add these topics to maximize discoverability:
-
-```text
-claude-code, gemini-cli, codex-cli, antigravity, cursor, github-copilot, opencode,
-agentic-skills, ai-coding, llm-tools, ai-agents, autonomous-coding, mcp,
-ai-developer-tools, ai-pair-programming, vibe-coding, skill, skills, SKILL.md, rules.md, CLAUDE.md, GEMINI.md, CURSOR.md
-```
-
+Questions or ideas? [Open an issue](https://github.com/alexreska/Antigravity/issues).

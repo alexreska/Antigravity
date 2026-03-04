@@ -1,201 +1,127 @@
-# Skills Directory
+# 🛠️ Skills Directory — 709+ Agentic Skills
 
-**Welcome to the skills folder!** This is where all 179+ specialized AI skills live.
-
-## 🤔 What Are Skills?
-
-Skills are specialized instruction sets that teach AI assistants how to handle specific tasks. Think of them as expert knowledge modules that your AI can load on-demand.
-
-**Simple analogy:** Just like you might consult different experts (a designer, a security expert, a marketer), skills let your AI become an expert in different areas when you need them.
+> The executable knowledge modules that power the [Antigravity Dream Team](../../README.md).
 
 ---
 
-## 📂 Folder Structure
+## What Are Skills?
 
-Each skill lives in its own folder with this structure:
+Skills are **specialized instruction sets** that teach AI agents how to handle specific tasks. Each skill is a folder containing a `SKILL.md` file with YAML frontmatter and step-by-step procedures.
+
+Think of them as **expert knowledge modules** your agents load on-demand. When the MASTER delegates a task to `REACT_EXPERT`, that agent reaches for skills like `react-best-practices` and `react-patterns` from its toolkit.
 
 ```
 skills/
-├── skill-name/              # Individual skill folder
-│   ├── SKILL.md             # Main skill definition (required)
-│   ├── scripts/             # Helper scripts (optional)
-│   ├── examples/            # Usage examples (optional)
-│   └── resources/           # Templates & resources (optional)
+├── react-best-practices/     # Each skill lives in its own folder
+│   ├── SKILL.md              # Core definition (required)
+│   ├── scripts/              # Helper scripts (optional)
+│   ├── examples/             # Usage examples (optional)
+│   └── resources/            # Templates & resources (optional)
 ```
-
-**Key point:** Only `SKILL.md` is required. Everything else is optional!
 
 ---
 
-## How to Use Skills
+## How Skills Connect to Agents
 
-### Step 1: Make sure skills are installed
-Skills should be in your `.agent/skills/` directory (or `.claude/skills/`, `.gemini/skills/`, etc.)
-
-### Step 2: Invoke a skill in your AI chat
-Use the `@` symbol followed by the skill name:
+Skills don't exist in isolation — they are the **toolkit** of each [persona](./../personas/). When the MASTER assigns work to an agent, that agent uses its assigned skills:
 
 ```
-@brainstorming help me design a todo app
+MASTER → assigns task to REACT_EXPERT
+         REACT_EXPERT uses:
+           ├── react-best-practices
+           ├── react-patterns
+           ├── react-state-management
+           └── performance-profiling
 ```
 
-or
-
-```
-@stripe-integration add payment processing to my app
-```
-
-### Step 3: The AI becomes an expert
-The AI loads that skill's knowledge and helps you with specialized expertise!
+> **Missing a skill?** The [`SKILL_CREATOR`](../personas/SKILL_CREATOR.md) agent can generate new skills on-the-fly following the Antigravity standard.
 
 ---
 
 ## Skill Categories
 
-### Creative & Design
-Skills for visual design, UI/UX, and artistic creation:
-- `@algorithmic-art` - Create algorithmic art with p5.js
-- `@canvas-design` - Design posters and artwork (PNG/PDF output)
-- `@frontend-design` - Build production-grade frontend interfaces
-- `@ui-ux-pro-max` - Professional UI/UX design with color, fonts, layouts
-- `@web-artifacts-builder` - Build modern web apps (React, Tailwind, Shadcn/ui)
-- `@theme-factory` - Generate themes for documents and presentations
-- `@brand-guidelines` - Apply Anthropic brand design standards
-- `@slack-gif-creator` - Create high-quality GIFs for Slack
+### 🎨 Creative & Design
+`algorithmic-art` · `canvas-design` · `frontend-design` · `ui-ux-pro-max` · `web-artifacts-builder` · `theme-factory` · `brand-guidelines-anthropic` · `figma-to-code` · `stitch-ui-design` · `mobile-design`
 
-### Development & Engineering
-Skills for coding, testing, debugging, and code review:
-- `@test-driven-development` - Write tests before implementation (TDD)
-- `@systematic-debugging` - Debug systematically, not randomly
-- `@webapp-testing` - Test web apps with Playwright
-- `@receiving-code-review` - Handle code review feedback properly
-- `@requesting-code-review` - Request code reviews before merging
-- `@finishing-a-development-branch` - Complete dev branches (merge, PR, cleanup)
-- `@subagent-driven-development` - Coordinate multiple AI agents for parallel tasks
+### ⚡ Development & Engineering
+`react-best-practices` · `nextjs-best-practices` · `typescript-expert` · `python-patterns` · `flutter-expert` · `golang-pro` · `rust-pro` · `java-pro` · `dotnet-architect` · `fastapi-pro` · `django-pro` · `nestjs-expert` · `angular-best-practices`
 
-### Documentation & Office
-Skills for working with documents and office files:
-- `@doc-coauthoring` - Collaborate on structured documents
-- `@docx` - Create, edit, and analyze Word documents
-- `@xlsx` - Work with Excel spreadsheets (formulas, charts)
-- `@pptx` - Create and modify PowerPoint presentations
-- `@pdf` - Handle PDFs (extract text, merge, split, fill forms)
-- `@internal-comms` - Draft internal communications (reports, announcements)
-- `@notebooklm` - Query Google NotebookLM notebooks
+### 🧠 Data & AI
+`rag-engineer` · `prompt-engineer` · `langgraph` · `langchain-architecture` · `llm-app-patterns` · `ai-agents-architect` · `autonomous-agents` · `embedding-strategies` · `vector-database-engineer` · `computer-vision-expert`
 
-### Planning & Workflow
-Skills for task planning and workflow optimization:
-- `@brainstorming` - Brainstorm and design before coding
-- `@writing-plans` - Write detailed implementation plans
-- `@planning-with-files` - File-based planning system (Manus-style)
-- `@executing-plans` - Execute plans with checkpoints and reviews
-- `@using-git-worktrees` - Create isolated Git worktrees for parallel work
-- `@verification-before-completion` - Verify work before claiming completion
-- `@using-superpowers` - Discover and use advanced skills
+### 🛡️ Security
+`api-security-best-practices` · `sql-injection-testing` · `pentest-commands` · `vulnerability-scanner` · `burp-suite-testing` · `metasploit-framework` · `red-team-tactics` · `ethical-hacking-methodology` · `cloud-penetration-testing`
 
-### System Extension
-Skills for extending AI capabilities:
-- `@mcp-builder` - Build MCP (Model Context Protocol) servers
-- `@skill-creator` - Create new skills or update existing ones
-- `@writing-skills` - Tools for writing and validating skill files
-- `@dispatching-parallel-agents` - Distribute tasks to multiple agents
+### ☁️ Infrastructure & DevOps
+`docker-expert` · `terraform-specialist` · `aws-serverless` · `kubernetes-architect` · `github-actions-templates` · `vercel-deployment` · `gcp-cloud-run` · `helm-chart-scaffolding` · `gitops-workflow`
+
+### 📊 Business & Marketing
+`copywriting` · `seo-audit` · `pricing-strategy` · `email-sequence` · `paid-ads` · `marketing-ideas` · `competitive-landscape` · `startup-financial-modeling` · `content-marketer`
+
+### 🧪 Testing & QA
+`test-driven-development` · `playwright-skill` · `testing-patterns` · `e2e-testing-patterns` · `python-testing-patterns` · `javascript-testing-patterns` · `performance-profiling`
+
+### 🔗 Integrations (50+)
+`hubspot-automation` · `stripe-integration` · `salesforce-automation` · `slack-automation` · `discord-automation` · `jira-automation` · `notion-automation` · `zapier-make-patterns` · `n8n-mcp-tools-expert` · `whatsapp-automation` · `telegram-automation` · and many more
+
+### 📄 Documents
+`docx` · `xlsx` · `pptx` · `pdf`
 
 ---
 
-## Finding Skills
+## Using Skills
 
-### Method 1: Browse this folder
-```bash
-ls skills/
+### With the Multi-Agent System
+When using the full Antigravity system, you don't invoke skills directly — the **MASTER delegates to agents**, and agents use their toolkit skills automatically.
+
+### Standalone Usage
+You can also use skills directly with any AI assistant:
+
+```
+> Use the @react-best-practices skill to review my component
+> Apply @seo-audit to analyze my website
+> Use @test-driven-development to help me write tests for this module
 ```
 
-### Method 2: Search by keyword
-```bash
-ls skills/ | grep "keyword"
-```
-
-### Method 3: Check the main README
-See the [main README](../README.md) for the complete list of all 179+ skills organized by category.
-
 ---
 
-## 💡 Popular Skills to Try
+## Creating New Skills
 
-**For beginners:**
-- `@brainstorming` - Design before coding
-- `@systematic-debugging` - Fix bugs methodically
-- `@git-pushing` - Commit with good messages
+Use the [`SKILL_CREATOR`](../personas/SKILL_CREATOR.md) agent, or create manually:
 
-**For developers:**
-- `@test-driven-development` - Write tests first
-- `@react-best-practices` - Modern React patterns
-- `@senior-fullstack` - Full-stack development
-
-**For security:**
-- `@ethical-hacking-methodology` - Security basics
-- `@burp-suite-testing` - Web app security testing
-
----
-
-## Creating Your Own Skill
-
-Want to create a new skill? Check out:
-1. [CONTRIBUTING.md](../CONTRIBUTING.md) - How to contribute
-2. [docs/SKILL_ANATOMY.md](../docs/SKILL_ANATOMY.md) - Skill structure guide
-3. `@skill-creator` - Use this skill to create new skills!
-
-**Basic structure:**
 ```markdown
 ---
-name: my-skill-name
-description: "What this skill does"
+name: my-new-skill
+description: "One-line summary of what this skill does"
 ---
 
-# Skill Title
+# Skill Name
 
-## Overview
-[What this skill does]
+## Prerequisites
+- [Required tools or access]
 
-## When to Use
-- Use when [scenario]
+## Step-by-Step Procedure
+1. **[Action]:** [Instruction]
+2. **[Action]:** [Instruction]
 
-## Instructions
-[Step-by-step guide]
+## Best Practices
+- [Do X, not Y because of Z]
 
-## Examples
-[Code examples]
+## Troubleshooting
+- If [error], then [fix]
 ```
 
----
-
-## Documentation
-
-- **[Getting Started](../docs/GETTING_STARTED.md)** - Quick start guide
-- **[Examples](../docs/EXAMPLES.md)** - Real-world usage examples
-- **[FAQ](../docs/FAQ.md)** - Common questions
-- **[Visual Guide](../docs/VISUAL_GUIDE.md)** - Diagrams and flowcharts
+**Rules:**
+- Use YAML frontmatter + Markdown body
+- Action-oriented — use imperative verbs
+- No fluff — no `README.md` or changelog, only `SKILL.md`
+- Portable — no hardcoded paths
 
 ---
 
-## 🌟 Contributing
+## Relevant Links
 
-Found a skill that needs improvement? Want to add a new skill?
-
-1. Read [CONTRIBUTING.md](../CONTRIBUTING.md)
-2. Study existing skills in this folder
-3. Create your skill following the structure
-4. Submit a Pull Request
-
----
-
-## References
-
-- [Anthropic Skills](https://github.com/anthropic/skills) - Official Anthropic skills
-- [UI/UX Pro Max Skills](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) - Design skills
-- [Superpowers](https://github.com/obra/superpowers) - Original superpowers collection
-- [Planning with Files](https://github.com/OthmanAdi/planning-with-files) - Planning patterns
-- [NotebookLM](https://github.com/PleasePrompto/notebooklm-skill) - NotebookLM integration
-
----
-
-**Need help?** Check the [FAQ](../docs/FAQ.md) or open an issue on GitHub!
+- [Main README](../../README.md) — Full system overview
+- [Agent Protocol](../docs/AGENT_PROTOCOL.md) — How agents use skills
+- [Persona Menu](../docs/persona_menu.md) — 80+ agents and their toolkits
+- [Skill Creator](../personas/SKILL_CREATOR.md) — Generate new skills on demand
