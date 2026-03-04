@@ -39,14 +39,25 @@ def setup_client(client_name, personas, skills):
 
     print(f"🚀 Initializing Client Environment: {client_name} ({client_slug})")
 
-    # 1. Create Directories (Client Context)
+    # 1. Git Operations - Create Branch FIRST
+    branch_name = f"client/{client_slug}"
+    print(f"🌿 Git Operations: {branch_name}")
+    
+    # Check if branch exists
+    branches = run_command("git branch --list")
+    if branch_name in branches:
+        run_command(f"git switch {branch_name}")
+    else:
+        run_command(f"git switch -c {branch_name}")
+
+    # 2. Create Directories (Client Context)
     if os.path.exists(client_dir):
         print(f"⚠️ Directory {client_dir} already exists. Updating...")
     else:
         os.makedirs(client_personas_dir, exist_ok=True)
         os.makedirs(client_skills_dir, exist_ok=True)
 
-    # 2. Copy Logic
+    # 3. Copy Logic
     # ALWAYS include SKILL_CREATOR
     if "SKILL_CREATOR" not in personas:
         personas.append("SKILL_CREATOR")
@@ -73,7 +84,7 @@ def setup_client(client_name, personas, skills):
         else:
             print(f"   ⚠️ Warning: Skill {s} not found.")
 
-    # 3. Create Client Master
+    # 4. Create Client Master
     if os.path.exists(TEMPLATE_MASTER_PATH):
         with open(TEMPLATE_MASTER_PATH, "r") as f:
             template = f.read()
@@ -88,17 +99,6 @@ def setup_client(client_name, personas, skills):
         print("   👑 Client Master Created.")
     else:
         print("   ❌ Error: Client Master Template not found.")
-
-    # 4. Git Operations - Create Branch
-    branch_name = f"client/{client_slug}"
-    print(f"🌿 Git Operations: {branch_name}")
-    
-    # Check if branch exists
-    branches = run_command("git branch --list")
-    if branch_name in branches:
-        run_command(f"git checkout {branch_name}")
-    else:
-        run_command(f"git checkout -b {branch_name}")
 
     # 5. CLEANUP PHASE (The "Purge")
     # Now that we are on the new branch, we delete the global .antigravity folder
