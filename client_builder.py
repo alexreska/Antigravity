@@ -7,7 +7,7 @@ import subprocess
 from datetime import datetime
 
 # CONFIGURATION
-BASE_DIR = "/Users/developer/Library/CloudStorage/GoogleDrive-reska.alex@gmail.com/My Drive/RESKAWEB/ANTIGRAVITY"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_MASTER_PATH = os.path.join(BASE_DIR, ".antigravity/CLIENT_MASTER_TEMPLATE.md")
 SOURCE_PERSONAS_DIR = os.path.join(BASE_DIR, ".antigravity/personas")
 SOURCE_SKILLS_DIR = os.path.join(BASE_DIR, ".antigravity/skills")
